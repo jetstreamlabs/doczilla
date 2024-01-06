@@ -1,5 +1,16 @@
 # Release Notes
 
+## [1.0.2](https://github.com/jetstreamlabs/doczilla/compare/v1.0.1...v1.0.2) (2024-01-06)
+
+
+### Bug Fixes
+
+* error in readme ([ca000a6](https://github.com/jetstreamlabs/doczilla/commit/ca000a606dc7d4f9b802d68543e2442a984e027a))
+
+
+* Merge pull request #2 from jetstreamlabs/dependabot/npm_and_yarn/main/postcss-import-16.0.0 ([83afdb9](https://github.com/jetstreamlabs/doczilla/commit/83afdb9ae4bd654f7ae3393efa42b2ac1340be5c)), closes [#2](https://github.com/jetstreamlabs/doczilla/issues/2)
+* Bump postcss-import from 15.1.0 to 16.0.0 ([aa70693](https://github.com/jetstreamlabs/doczilla/commit/aa706931f37b37cace52d6ee4ea779c02025f558))
+
 ## [1.0.1](https://github.com/jetstreamlabs/doczilla/compare/v1.0.0...v1.0.1) (2024-01-06)
 
 
