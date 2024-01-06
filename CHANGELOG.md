@@ -1,5 +1,12 @@
 # Release Notes
 
+## [1.0.1](https://github.com/jetstreamlabs/doczilla/compare/v1.0.0...v1.0.1) (2024-01-06)
+
+
+### Basic Daily Tasks
+
+* added new 1.x branch and update tests ([186fad4](https://github.com/jetstreamlabs/doczilla/commit/186fad4e5c717c4c449b366a90ea54aa80a8c713))
+
 # 1.0.0 (2024-01-06)
 
 
