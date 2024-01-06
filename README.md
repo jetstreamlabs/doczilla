@@ -56,3 +56,5 @@ or you can run the update artisan command directly:
 ```bash
 php artisan docs:update
 ```
+
+Update here
