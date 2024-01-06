@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+[x-cloak] {
+  display: none;
+}
+
+#nprogress .bar {
+  @apply bg-primary-500 !important;
+}
+
+.stickyHeader {
+  @apply shadow-md transition-all duration-200;
+  @apply bg-opacity-30 backdrop-blur-lg backdrop-filter !important;
+}
+
+.shiki {
+  counter-reset: step;
+  @apply rounded-lg bg-zinc-200  overflow-auto relative p-0 !important;
+
+  &:hover .line {
+    @apply blur-none;
+  }
+
+  .line {
+    transition: filter 0.3s;
+    @apply inline-block w-full px-2;
+
+    &::before {
+      content: counter(step);
+      counter-increment: step;
+      @apply w-6 mr-4 pr-2 inline-block text-right border-r border-zinc-400 text-zinc-400 dark:border-zinc-600 dark:text-zinc-600;
+    }
+
+    &.highlighted {
+      @apply bg-primary-300/20;
+
+      &::before {
+        content: "";
+        @apply bg-primary-300;
+      }
+    }
+
+    &.add {
+      @apply bg-success-300/20;
+
+      &::before {
+        content: "+";
+        @apply text-success-500;
+      }
+    }
+    &.remove {
+      @apply bg-error-300/20;
+
+      &::before {
+        content: "-";
+        @apply text-error-500;
+      }
+    }
+  }
+
+  code {
+    @apply block min-w-full overflow-auto py-3;
+
+    span {
+      @apply leading-6;
+    }
+  }
+
+  .focused ~ .line:not(.focused),
+  .line:not(.focused):has(~ .focused) {
+    filter: blur(1.5px);
+  }
+}
+
+html.dark .shiki {
+  color: var(--shiki-dark) !important;
+  background-color: var(--shiki-dark-bg) !important;
+}

@@ -1,0 +1,68 @@
+/* Add any component here  */
+.reflection {
+  background-image: url("/storage/brand/splash.svg");
+  background-position: bottom center;
+  background-size: 100%;
+  background-color: transparent;
+  transform: rotatex(180deg) translatey(-2px);
+  -webkit-mask-image: linear-gradient(transparent 30%, black 100%);
+  opacity: 0.5;
+  filter: blur(2px) brightness(1);
+}
+.breadcrumbs {
+  li {
+    @apply h-4 text-sm;
+
+    a {
+      @apply text-info-500 dark:text-gray-100;
+
+      &:hover {
+        @apply text-warning-500;
+      }
+    }
+
+    &:after {
+      content: "/";
+      @apply mx-2;
+    }
+
+    &:last-child:after {
+      content: "";
+    }
+
+    &.last {
+      @apply font-medium text-opacity-75 dark:text-gray-500;
+    }
+  }
+}
+
+.toc {
+  @apply mb-12 pl-0;
+
+  li {
+    @apply list-none;
+
+    a {
+      @apply font-normal text-primary-500 hover:text-primary-600;
+    }
+  }
+}
+
+.prose {
+  @apply max-w-[68ch] text-base leading-7;
+
+  :not(pre) > code {
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    @apply text-error-500 rounded px-[2px] font-mono bg-error-100;
+  }
+}
+
+.dark .prose {
+  :not(pre) > code {
+    @apply bg-primary-200 text-primary-800;
+  }
+}
