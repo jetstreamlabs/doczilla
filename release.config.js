@@ -98,6 +98,11 @@ export default {
         assets: ['CHANGELOG.md'],
       },
     ],
-    '@semantic-release/github',
+    [
+      '@semantic-release/github',
+      {
+        publish: true,
+      },
+    ],
   ],
 };
