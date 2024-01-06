@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/packagist/dt/doczilla/doczilla" alt="Total Downloads" />
     <img src="https://img.shields.io/packagist/v/doczilla/doczilla" alt="Latest Stable Version" />
     <img src="https://img.shields.io/packagist/l/doczilla/doczilla" alt="License" />
-    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Fa2df8a1a-95ab-444f-baa4-bd511a0149f7%3Fcommit%3D1&style=flat" alt="Laravel Forge Site Deployment Status" />
+    <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fforge.laravel.com%2Fsite-badges%2Fa2df8a1a-95ab-444f-baa4-bd511a0149f7&style=flat" alt="Laravel Forge Site Deployment Status" />
   </div>
 
 ## Doczilla Documentation Platform
